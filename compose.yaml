@@ -1,0 +1,7 @@
+﻿services:
+  tutorialcsharp:
+    image: tutorialcsharp
+    build:
+      context: .
+      dockerfile: TutorialCSharp/Dockerfile
+
