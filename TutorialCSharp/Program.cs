@@ -3,6 +3,7 @@
 using TutorialCSharp.Days;
 using TutorialCSharp.Excersises;
 using TutorialCSharp.Generics;
+using TutorialCSharp.Async;
 
 var day1 = new Day1();
 // day1.runExcersise();
@@ -26,4 +27,16 @@ var day3Exceptions = new ExampleException();
 //     throw;
 // }
 
-IRepository<Currency> currencyRepository;
+// evitar que se pueda usar un tipo generico que no sea del tipo que se desea
+// con where T se le dice que T debe heredar de una clase que  se define o un tipo que se defina
+// esto ayuda a restringir los tipos que se pueden usar con genericos
+// IRepository<Currency> currencyRepository;
+
+var asyncExample = new Simulation();
+// var response = await asyncExample.SimularLlamadaApiAsync("Omar");
+// Console.WriteLine($"Respuesta: {response}");
+
+// await asyncExample.EjecutarConcurrenteAsync();
+
+var linqAdvance = new ExercisesLINQAdvance();
+linqAdvance.Run();
