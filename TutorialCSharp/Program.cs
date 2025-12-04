@@ -4,6 +4,9 @@ using TutorialCSharp.Days;
 using TutorialCSharp.Excersises;
 using TutorialCSharp.Generics;
 using TutorialCSharp.Async;
+using TutorialCSharp.ColeccionesMutabilidad;
+using TutorialCSharp.Concurrencia;
+using TutorialCSharp.Project2Week;
 
 var day1 = new Day1();
 // day1.runExcersise();
@@ -39,4 +42,13 @@ var asyncExample = new Simulation();
 // await asyncExample.EjecutarConcurrenteAsync();
 
 var linqAdvance = new ExercisesLINQAdvance();
-linqAdvance.Run();
+// linqAdvance.Run();
+
+var collectionsMutability = new ColeccionesMutabilidad();
+// collectionsMutability.Run();
+
+var testConcurrency = new TestLesson();
+// await testConcurrency.Run();
+
+var projecto2Week = new Projecto2Week();
+await projecto2Week.Run();
